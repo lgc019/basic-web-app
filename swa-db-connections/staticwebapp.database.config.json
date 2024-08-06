@@ -51,12 +51,12 @@
       },
       "permissions": [
         {
-          "role": "anonymous",
-          "actions": [
-            {
-              "action": "*"
-            }
-          ]
+          "role": "authenticated",
+          "actions": ["read"],
+          "fields": {
+            "include": ["pk_ship_registry_current", "imo", "mmsi", "ship_name", "build_date"],
+            "exclude": []
+          }
         }
       ]
     }
