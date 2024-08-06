@@ -24,11 +24,7 @@
         "allow-credentials": false
       },
       "authentication": {
-        "provider": "AzureAD",
-        "jwt": {
-          "audience": "492adfc0-6233-4e0b-ac12-df3b7c6f3dff",
-          "issuer": "https://login.microsoftonline.com/a68572e3-63ce-4bc1-acdc-b64943502e9d/v2.0"
-        }
+        "provider": "StaticWebApps"
       },
       "mode": "production"
     }
@@ -51,8 +47,12 @@
       },
       "permissions": [
         {
-          "role": "authenticated",
-          "actions": ["read"],
+          "role": "anonymous",
+          "actions": [
+            {
+              "action": "*"
+            }
+          ],
           "fields": {
             "include": ["pk_ship_registry_current", "imo", "mmsi", "ship_name", "build_date"],
             "exclude": []
