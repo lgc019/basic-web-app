@@ -26,8 +26,8 @@
       "authentication": {
         "provider": "AzureAD",
         "jwt": {
-            "audience": "12601c2d-f627-48ea-bf37-e20882fb6847",
-            "issuer": "https://login.microsoftonline.com/a68572e3-63ce-4bc1-acdc-b64943502e9d/v2.0"
+          "audience": "12601c2d-f627-48ea-bf37-e20882fb6847",
+          "issuer": "https://login.microsoftonline.com/a68572e3-63ce-4bc1-acdc-b64943502e9d/v2.0"
         }
       },
       "mode": "production"
