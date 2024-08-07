@@ -26,8 +26,8 @@
       "authentication": {
         "provider": "AzureAD",
         "jwt": {
-            "audience": "323d2078-e6b4-4f39-b8c5-1a5bb22c94d1",
-            "issuer": "https://login.microsoftonline.com/adf10e2b-b6e9-41d6-be2f-c12bb566019c/v2.0"
+            "audience": "12601c2d-f627-48ea-bf37-e20882fb6847",
+            "issuer": "https://login.microsoftonline.com/a68572e3-63ce-4bc1-acdc-b64943502e9d/v2.0"
         }
       },
       "mode": "production"
@@ -50,6 +50,18 @@
         "enabled": true
       },
       "permissions": [
+        {
+          "role": "anonymous",
+          "actions": [
+            {
+              "action": "read",
+              "fields": {
+                "include": ["pk_ship_registry_current", "imo", "mmsi", "ship_name", "build_date"],
+                "exclude": []
+              }
+            }
+          ]
+        },
         {
           "role": "authenticated",
           "actions": [
